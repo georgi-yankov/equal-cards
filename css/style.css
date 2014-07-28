@@ -1,0 +1,103 @@
+h1, p {
+	margin: 0;
+}
+
+@font-face {
+	font-family: MegaPlay;
+	src: url('../css/fonts/MegaPlay.ttf');
+}
+
+@font-face {
+	font-family: Plateaux;
+	src: url('../css/fonts/Plateaux.ttf');
+}
+
+@font-face {
+	font-family: Okay;
+	src: url('../css/fonts/Okay.ttf');
+}
+
+body {
+	background: url('../css/img/pattern.png');
+}
+
+ul, li {
+	list-style: none;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;	
+}
+
+/*******************************************
+	HEADER
+*******************************************/
+
+#header {
+	font-family: 'Okay';
+	font-size: 30px;
+	text-align: center;
+}
+
+#logo {
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+}
+
+#main-nav {
+	padding: 10px 0;
+}
+
+/*******************************************
+	CONTENT
+*******************************************/
+
+#content {
+	min-height: 330px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#play-area {
+	background-color: #fff;
+	display: inline-block;
+	margin-top: 0;
+	padding: 20px 20px 10px;
+	width: 430px;
+}
+
+.single-card {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+.single-card img:hover {
+	cursor: pointer;
+}
+
+.single-card:nth-child(4n) {
+	margin-right: 0;
+}
+
+.single-card img.permOpened:hover,
+.single-card img.tempOpened:hover {
+	cursor: default;
+}
+
+.permOpened {
+	opacity: 0.4;
+}
+
+#new-game {
+	font-weight: bold;
+	padding: 10px;
+}
+
+#footer p {
+	text-align: center;
+}

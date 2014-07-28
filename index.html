@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Equal Cards</title>
+    <meta name="description" content="Equal cards game" />
+    <meta name="keywords" content="equal, cards, game" />
+    <meta name="author" content="Georgi Yankov" />
+    <meta name="robots" content="index, follow" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- ******************************************************************************* -->
+        <!-- ******     HEADER      ******************************************************** -->
+        <!-- ******************************************************************************* -->
+        <header id="header" role="banner">
+            <!-- LOGO -->
+            <h1 id="logo">Equal Cards</h1>
+
+            <!-- MAIN NAVIGATION -->
+            <nav id="main-nav" role="navigation">
+                <select id="levels-dropdown">
+                    <script>
+                        var i,
+                            selected;
+
+                        for (i = 1; i <= 4; i++) {
+                            selected = (i === 1) ? 'selected' : '';
+                            document.write('<option value="' + i + '"' + selected + '>Level ' + i + '</option>');
+                        };
+                    </script>
+                </select>
+
+                <button id="change-level">Change Level</button>
+            </nav>
+        </header>
+
+        <!-- ******************************************************************************* -->
+        <!-- ******     CONTENT      ******************************************************* -->
+        <!-- ******************************************************************************* -->
+        <div id="content" role="main">
+            <ul id="play-area">
+            </ul>
+
+            <aside id='sidebar' role="complementary">
+                <button id="new-game">New Game</button>
+            </aside>
+        </div>
+
+        <!-- ******************************************************************************* -->
+        <!-- ******     FOOTER      ******************************************************** -->
+        <!-- ******************************************************************************* -->
+        <footer id="footer" role="contentinfo">
+            <p>Copyright &copy; 2014 Equal Cards Game. All rights reserved.</p>
+            <p>Made by <a href="http://www.gsy-design.com/" target="_blank" title="GSY Web Design">Georgi Yankov</a></p>
+        </footer>
+    </div>
+
+    <script src="js/libs/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
